@@ -1,0 +1,7 @@
+from django.conf.urls.default import patterns, url
+from views import home
+
+urlpatterns = patterns('',
+                       url(r'^home/$', home, name="home")
+
+)
