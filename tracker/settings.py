@@ -120,6 +120,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'ticket',
     'django.contrib.admin',
+    'django.contrib.databrowse',
 )
 
 # A sample logging configuration. The only tangible logging
