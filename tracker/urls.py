@@ -1,12 +1,13 @@
 from django.conf.urls import patterns, include, url
 
-from django.contrib import admin
+from django.contrib import admin, databrowse
 admin.autodiscover()
 
 from ticket.databrowse_config import *
 
 urlpatterns = patterns('',
     url(r'^ticket/', include('ticket.urls')),
+    url(r'^$', include('ticket.urls')),
     url(r'^databrowse/(.*)', databrowse.site.root),
 
     url(r'^admin/', include(admin.site.urls)),
